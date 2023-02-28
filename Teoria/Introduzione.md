@@ -38,3 +38,10 @@ Il debugging rimuove le retroazioni indesiderate tra parti del software.
 
 >Autorganizzazione -> i sistemi naturali sono basati sull'evoluzione dinamica. Anche le regole di evoluzione possono variare nel tempo.
 
+## Esempi
+Esempi di **nature-inspired computing** sono:
+- reti neutrali
+- algoritmi genetici
+- sistemi immunitari simulati
+- simulated annealing (https://en.wikipedia.org/wiki/Simulated_annealing)
+
