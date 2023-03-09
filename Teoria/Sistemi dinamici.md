@@ -77,7 +77,7 @@ I sistemi più interessanti per noi sono quelli non lineari, irreversibili.
 Partendo dall'equazione differenziale $\frac{dx}{dt} = kx$
 Una funzione la cui derivata è uguale a se stessa è l'esponenziale: $x(t) = Ae^{kt}$ perchè vale anche se 
 
-Con il parametro decido la direzione dell'esponenziale (ottengo anche una retta).
+Con il parametro decido la direzione dell'esponenziale (ottengo anche una costante con k=0).
 
 Nei sistemi lineari il risultato della soluzione è la somma delle soluzioni parziali.
 
