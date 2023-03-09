@@ -97,9 +97,9 @@ Con:
 - a < 0 è instabile, il sistema ricade negli altri due punti -> **doppia buca**
 ![[potenziale_buca.png]]
 
-Il secondo caso equivale ad un pendolo inverso. La scelta della direzione dipende dal rumore.
+Il secondo caso equivale ad un pendolo inverso. La scelta della direzione dipende dal rumore. Rottura del potenziale.
 
-Vedi: Segway
+Vedi: Segway, XAI - Explainable Artificial Intelligence
 
-Rottura del potenziale
-
+# Visione sugli argomenti futuri
+Partiremo dalle scienze sociali, che studiano le interazioni tra gli agenti.
