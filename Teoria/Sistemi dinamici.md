@@ -107,7 +107,7 @@ Ottengo un OCR per il riconoscimento del testo: i punti di equilibrio/stabilità
 Abbiamio volpi e conigli. Le volpi mangiano i conigli.
 
 Modellato da:
-$\begin{pmatrix} \dot n_{1}(t) \\ \dot n_{2}(t) \end{pmatrix} = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}  \begin{pmatrix} n_{1}(t) \\ n_{2}(t) \end{pmatrix}$
+$\begin{pmatrix} \dot n_{1}(t) \\ \dot n_{2}(t) \end{pmatrix} = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}  \begin{pmatrix} n_{1}(t) \\ n_{2}(t) \end{pmatrix}$$
 
 In base ai coefficienti a che scelgo (con a<0 approccio "distruttivo") ottengo:
 - parassitismo se discordi
