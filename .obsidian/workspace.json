@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "afcddfe15c87a50e",
+        "id": "1b4d7fb78268601e",
         "type": "tabs",
         "children": [
           {
-            "id": "90fef5730b336303",
+            "id": "610fd1f4bdae904d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Sistemi discreti.md",
+                "file": "Teoria/Agenti.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/Sistemi discreti.md",
+                "file": "Teoria/Agenti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/Sistemi discreti.md",
+                "file": "Teoria/Agenti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoria/Sistemi discreti.md"
+                "file": "Teoria/Agenti.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "90fef5730b336303",
+  "active": "bf85df7cbf0e736a",
   "lastOpenFiles": [
-    "Teoria/Images/potenziale_buca.png",
+    "Teoria/Agenti.md",
+    "Teoria/Limti della programmazione tradizionale.md",
     "Teoria/Sistemi discreti.md",
+    "Teoria/Images/potenziale_buca.png",
     "Teoria/Images/potenziale.png",
     "Teoria/Images/feigenbaum.png",
     "Teoria/Images/punti_fissi_conigli.png",
@@ -159,7 +161,6 @@
     "Teoria/Introduzione.md",
     "Teoria/Images/sistema_dissipativo.png",
     "Teoria/Images/sistema_dinamico.png",
-    "Teoria/Limti della programmazione tradizionale.md",
     "Teoria/Images",
     "Teoria"
   ]
