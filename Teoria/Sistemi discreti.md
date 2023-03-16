@@ -24,6 +24,8 @@ Più realistico: $(1+b)x_t - dx_t^2$
 - b termine di controllo per le nascite
 - d termine di controllo per le morti -> quando siamo tanti prevale lui
 
+Vedi: https://it.wikipedia.org/wiki/Fogna_del_comportamento
+
 ### Modello di Verhulst
 La crescita si ferma al *livello di saturazione* o _capacità portante_ -> K
 
