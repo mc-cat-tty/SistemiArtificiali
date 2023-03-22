@@ -214,3 +214,73 @@ I comportamenti della swarm intelligence sono detti **emergenti**, in quanto **e
 L'emergenza del sistema si nota dall'esterno (agli occhi dell'osservatore)
 
 Vedi: flocking model (flock = stormo, gregge)
+
+## Auto-organizzazione
+I comportamenti intelligenti emergono su larga scala, ad alto livello.
+
+>**Adattabilità**: possono auto-organizzarsi indipendentemente dall'ambiente, reagire a stimoli esterni sparpagliandosi e riorganizzarsi senza perdere la coordinazione
+
+## Parti del sistema
+- individui
+	- non hanno una percezione "a lungo raggio", ma piuttosto locale
+	- agenti reattivi -> reagiscono seguendo un meccanismo di azione-reazione
+	- meccanismi stocastici introducono rumore -> servono per evitare la cristallizzazione in configurazioni di equilibrio
+- interazioni
+	- tipicamente non sono comunicazioni dirette -> indirette
+	- gli agenti sono socievoli -> seguono i loro compagni
+	- annusano e modificano l'ambiente
+- ambiente
+	- spazio in cui vivono gli individui
+	- può avere proprietà proprie, non è necessariamente statico e immutabile
+	- può avere processi attivi in grado di modificare le proprie caratteristiche (dinamicamente) -> l'ambiente ha una "vita propria"
+
+## Le retroazioni
+>Le **retroazioni** (o **feedback**) permettono di fare agire gli agenti in un determinato modo secondo lo stato attuale del sistema.
+
+- retroazioni positive (di attivazione o rinforzo)
+	- il comportamento degli individui viene accentutato
+	- come il processo di fusione dei ghiacci ai poli: più acqua, più sciogliemento, più acqua e così via.
+	- oppure il processo di cogelamento dei poli: più ghiaccio, più riflessione, più freddo, più ghiaccio e così via
+
+- retroazioni negative (di controllo o rinforzo)
+	- il comportamento degli individui viene inibito
+	- come la presenza del vapore acqueo in atmosfera: più caldo, più nubi, più riflessione, meno caldo, meno vapore, meno nubi, ...
+
+Un sistema swarm le ha entrambe, altrimenti o divergerebbe esplodendo o convergerebbe senza più muoversi.
+
+Altri esempi di sistemi dinamici complessi (non complicati):
+- fluidi
+- sciami
+- mercati
+- moti cellulari
+
+Nella swarm intelligence gli individui fanno scelte casuali: permtte l'esplorazione, uscendo dagli schemi (sfuggendo dai minimi locali). Il rumore viene usato come risorsa, nessuna configurazione è finale/definitiva.
+
+## Ruolo della massa
+L'auto-organizzazione si può raggiungere in modo robusto solo con grandi masse di individui, in pochi non si esplorerebbero vaste aree dello spazio.
+
+Più agenti ci sono, più velocemente si organizzano. Permette la tolleranza a malfunzionamenti locali (robusto alla rottura di una singola componente)
+
+Permette l'adattività: una grande percentuale di agenti fa il proprio dovere, mentre gli altri possono essere persi alla ricerca di soluzioni alternative. Es: soccorritori e valanga
+
+## Swarm systems vs multiagent systems
+Gli sciami sono gruppi di agenti ma l'interesse è sul comportamento collettivo piuttosto che sulle singole componenti.
+
+## Motivazioni
+Perchè usare swarm intelligence nei sistemi distribuiti?
+- gli agenti sono molto semplici (ed economici)
+- interagiscono in modo locale (no sensori sofisticati)
+- MA edge conditions sconosciute, ansia dovuta a non sapere come il sistema si organizzerà
+
+## In natura
+Non solo gli animali "stupidi" esibiscono swarm intelligence:
+- mandrie di bufali e gnu nella prateria
+- gruppi di castori che costruiscono dighe con sfiatatoio, senza essere coordinati
+- branchi di lupi in caccia (no maschio alpha, beta, gamma, etc.)
+- gruppi di umani auto-organizzati
+
+## Sincronizzazione
+Esempio: applausi a teatro (sincronizzati o sfasati), lucciole nord-americane che si sincronizzano senza leader, scarica di neuroni del cervello, ...
+
+Ogni lucciola ha una sua frequenza: raggiunto l'apice dell'eccitazione emettono un lampo.
+
