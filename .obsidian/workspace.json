@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1ed443b0ff2a950a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Laboratorio/Swarm intelligence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laboratorio/Introduzione a NetLogo.md",
+                "file": "Laboratorio/Swarm intelligence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laboratorio/Introduzione a NetLogo.md",
+                "file": "Laboratorio/Swarm intelligence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laboratorio/Introduzione a NetLogo.md"
+                "file": "Laboratorio/Swarm intelligence.md"
               }
             }
           }
@@ -159,13 +171,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd8baa3983c72163",
+  "active": "1ed443b0ff2a950a",
   "lastOpenFiles": [
-    "Laboratorio/playground.nlogo",
-    "Teoria/Agenti.md",
+    "Laboratorio/ant_sort.nlogo",
+    "Laboratorio/ant_soort.nlogo",
+    "Laboratorio/a.out.nlogo",
     "Laboratorio/Introduzione a NetLogo.md",
-    "Laboratorio",
+    "Laboratorio/Swarm intelligence.md",
     "Teoria/Sistemi discreti.md",
+    "Teoria/Agenti.md",
+    "Laboratorio/playground.nlogo",
+    "Laboratorio",
     "Teoria/Sistemi dinamici.md",
     "Teoria/Limti della programmazione tradizionale.md",
     "Teoria/Images/potenziale_buca.png",
