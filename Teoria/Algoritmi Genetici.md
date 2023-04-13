@@ -31,7 +31,7 @@ Mendel intuisce il DNA: doppia elica che trasporta i geni di madre e padre.
 Watson e Crick confermano l'intuizione e sviluppano la teoria.
 
 ## Dogma centrale
-Il DNE è una sequenza di nucleotidi, ognuno dei quali contiene una base azotata. -> 4 livelli di memorizzazione: A, T, C, G
+Il DNA è una sequenza di nucleotidi, ognuno dei quali contiene una base azotata. -> 4 livelli di memorizzazione: A, T, C, G
 
 #Vedi: Gattaca
 
@@ -55,5 +55,68 @@ Crossing-over (ricombinazione cromosomica): i geni dei figli vengono tagliati in
 
 I batteri si riproducono con una velocità non inferiore a 20 minuti. Tutti i dispositivi assessuati sono veloci nella riproduzione.
 
-# Sintesi neodarwiniana
+## Sintesi neodarwiniana
+
+#Todo: da qui fino a Crossover Holland
+
+# Algoritmi generici
+## Crossover di Holland
+Si parte da building blocks fondamentali e attraverso una ricombinazione + mutazione di essi si ottiene l'ottimo.
+
+
+## Risovlere problemi imitando la natura
+L'evoluzione non ha fine. Gli algoritmi genetici si fermano quando otteniamo una buona fitness.
+
+1. Valutazione individuiù
+2. Selezione dei più adatti
+3. Ricombinazione
+4. Mutazione
+5. Ripetizione
+
+## Motivo funzionamento
+Holland pensa al perchè gli algoritmi genetici funzionano. I crossover sparpagliano soluzioni nello **spazio delle fasi** (proiezione in zone buone).
+
+La mutazione permette un'esplorazione locale -> esplorazione zone vicine. La mutazione introduce novità. Dimostriamo che è utile per assurdo.
+
+Supponiamo di voler trovare il massimo numero rappresentabile con 5 bit. Dobbiamo travare 11111. Se partiamo da una popolazione iniziale (o popolazione a tempo generico t):
+ - 10001
+ - 10100
+ - 11101
+ - 01100
+
+In tutti questi casi in posizione 3 (partendo da 0) si trova uno 0 -> con soli crossover non si arriverà mai alla soluzione ottima.
+
+Vedi curva di fitness: la fitness media tende a quella dell'individuo migliore. Si raggiunge l'ottimalità quando ho una popolazione omogenea, composta da individui uguali (cloni del migliore individuo trovato).
+
+## Schemi: l'interpretazione di Holland
+Ogni individuo ha una piccola intuizione, che ottimizza un sottoproblema (sottostringa).
+I figli ereditano le idee del padre.
+
+Sotto luce l'evoluzione è uno scontro di idee.
+
+Holland chiama queste idee schemi (_schemes_)
+Si può rappresentare come una soluzione con alcuni don't care: 01##1 = {01001, 01011, 01101, 01111}
+
+Il mondo delle idee è la combinatoria dei don't care.
+
+### Riproduzione di un singolo individuo
+La probrabilità di essere scelto è il rapporto tra la sua forza e la forza di tutti gli altri individui.
+$$\frac{f_i}{\sum{f_k}}$$
+
+Forza (fitness) media di uno schema H: $f(H) = \frac{\sum_k{f_k}}{m}$
+
+Il crossover può distruggere uno schema buono. Un'idea è tanto più facile da smontare più è lunga e più punti fissi ha -> si faboriscono gli schemi corti ad elevata fitness
+
+Prima vengono generate idee con tanti don't care, che poi si stabilizzano di generazione in generazione.
+
+#Vedi: slide
+
+Idea: gli schemi con alta fitness si diffondono esponenzialmente
+
+### Convergenza prematura
+Fenomeno in cui una soluzione sub-ottimale colonizza l'intera popolazione. Se non ci fosse crossover si replicherebbero gli schemi migliori, ma mancherebbe la diversità.
+La fitness media diventa uguale alla fitness massima.
+
+Si usano tecniche per rallentare la convergenza
+
 
