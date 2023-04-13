@@ -48,3 +48,25 @@ Se il mondo smette di essere toroidale (aggiunta pareti) i cumuli si addensano s
 ## Comandi utili
 - `random-xcor` e `random-ycor` per coordinate casuali all'interno del mondo
 - `setxy` imposta le coordinate di una turtle
+
+# Ant sorting con stigmergia
+Si nota che in tratte più corte la traccia di feromone è più densa. Quindi l'odore è più intenso. Una velocità maggiore nel completare lo spostamento implica meno dispersione e quindi un rinforzo (positive feedback loop) maggiore.
+
+# Ant foraging
+> foraging = "ricerca di cibo"
+
+Permette la risoluzione di labirinti.
+
+La casualità permette di esplorare nuovi percorsi. Più un percorso è odoroso più formiche attira, più formiche portano a più odore. A parità di formiche il percorso più corto, diventa quello più odoroso. Emerge il percorso di minima distanza.
+
+Esiste anche una retroazione negativo (controllo) che fa scomparire i percorsi meno efficaci. La retroazione positiva (rinforzo) fa si che vengano amplificati i percorsi migliori.
+
+L'italino Dorigo ha inventato l'ant sorting. Al momento è il migliore algoritmo per l'ottimizzazione delle visite su grafo (es: commesso viaggiatore)
+
+#Vedi: Tabu search (vedi gioco tabù) e simulated annealing
+
+Usato anche per l'instradamento su rete, compresi i sistemi P2P. #Vedi: anthill (UniBo)
+
+Sono comportamenti emergenti anche tra gli esseri umani quando si attraversa un'area verde per ottimizzare il percorso verso un certo obiettivo.
+
+
