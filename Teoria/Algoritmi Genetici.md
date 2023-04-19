@@ -113,10 +113,81 @@ Prima vengono generate idee con tanti don't care, che poi si stabilizzano di gen
 
 Idea: gli schemi con alta fitness si diffondono esponenzialmente
 
-### Convergenza prematura
+# Convergenza prematura
 Fenomeno in cui una soluzione sub-ottimale colonizza l'intera popolazione. Se non ci fosse crossover si replicherebbero gli schemi migliori, ma mancherebbe la diversità.
 La fitness media diventa uguale alla fitness massima.
 
 Si usano tecniche per rallentare la convergenza
 
+# Nicchie
+- Nella realtà gli individui si riproducono con individui della stessa zona (**località degli individui**)
+- Inoltre i figli rimangono circa nella stessa area in cui abitano i genitori.
+- I conflitti sono risolti in modo dipendente dalla forza dei contendenti
 
+I genomi con alta fitness prima di confrontarsi con genomi distanti devono arrivarci, superando molti conflitti.
+
+Questo meccanismo perserva la diversità -> rallenta l'evoluzione
+
+La scelta dei genitori proporzionale alla fitness rappresenta bene quello che succede in natura, ma ha degli svantaggi: possibile scomparsa di individui molto performanti.
+
+Con una scelta a caso, una volta arrivati vicino alla convergenza, potrei scegliere un individuo che non è il migliore per la riproduzione.
+
+# Elitismo
+> Garantisce la sopravvivenza degli individui con fitness più alta.
+
+Questo velocizza la convergenza. Per arginare il problema ho diverse tecniche:
+
+### Scaling
+Selezione selezione degli individui secondo metriche **non lineari** dalla fitness (es: quadratica, cubica), per esaltare le piccole differenze.
+
+Quindi $p_i = \frac{f_i}{\sum_j{f_j}}$ si trasforma in $p_i = \frac{F(f_i)}{\sum_j{F(f_j)}}$ con $F(X)$ uguale a $x^2$, $x_3$, ...
+
+### Selezione per rango
+>Ordino gli individui per fitness (ordine decrescente). Uso un **ranking** con distribuzione di punteggio costante, indipendente dal valore di fitness.
+
+La selezione a questo punto può lavorare sui ranking al posto che sul valore di fitness
+
+Vantaggi:
+- nessun individuo ha una probabilità molto maggiore di essere selezionato
+- #Todo
+
+### Scelta per torneo
+Scelgo casualmente s individui dalla popolazione di N individui, #Todo 
+
+# Varianti
+Posso aggiungere **punti di taglio**, non è obbligatorio averne 1 solo.
+
+#Todo 
+
+È possibile usare una **codifica discreta**, quindi non necessariamente binaria. Ogni posizione può essere occupata da un simbolo che appartiene ad un alfabeto con k>2 simboli, oppure una codifica in numeri reali.
+
+L'operatore di mutazione deve essere **modificato** come di seguito:
+- per **caso discreto**: si sceglie una posizione e si sistituisce il simbolo in quella posizione con uno dei possibili k-1 simboli restanti, scelto a caso
+- per **caso continuo**: #Todo 
+
+Esistono molte altre varianti.
+
+# Algoritmi genetici per l'ottimizzazione
+La **fitness** coincide con la **funzione di costo**
+
+Alternativa all'ascesa del gradiente.
+
+#Todo 
+
+## Ricerca di minimi e massimi
+Da immaginare come la ricerca della cima più alta di una catena montuosa
+
+### Problemi non risolvibili
+Non sono risolvibili problemi come la ricerca di un ago in un pagliaio
+
+### Problema del commesso viaggiatore
+Non posso rappresentare gli individui come una lista \[A, B, C, D\] di nodi da visitare, perchè facendo crossover potrei ottenere sequenze illegali, in cui ad esempio si ripete più volte un figlio.
+
+#### Crossover a mappa parziale
+Per ottenere tour legali posso pensare al crossover come ad una mappa di scambio che permuta i figli.
+
+### Altre applicazioni
+- classici problemi di ottimizzazione combinatoria
+- ottimizzazione di parametri di un modello dinamico (biorisanamento terreni)
+- logistica: instradamento di veicoli in finestre temporali
+- scheduling: orari scolastici

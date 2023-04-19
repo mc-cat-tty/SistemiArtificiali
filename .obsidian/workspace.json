@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laboratorio/Swarm intelligence.md",
+                "file": "Teoria/Algoritmi Genetici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b9f80dfc5738137",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Sistemi esperti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laboratorio/Swarm intelligence.md",
+                "file": "Teoria/Sistemi esperti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laboratorio/Swarm intelligence.md",
+                "file": "Teoria/Sistemi esperti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laboratorio/Swarm intelligence.md"
+                "file": "Teoria/Sistemi esperti.md"
               }
             }
           }
@@ -171,13 +183,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ed443b0ff2a950a",
+  "active": "8b9f80dfc5738137",
   "lastOpenFiles": [
+    "Teoria/Algoritmi Genetici.md",
+    "Teoria/Sistemi esperti.md",
+    "Laboratorio/Swarm intelligence.md",
     "Laboratorio/ant_sort.nlogo",
     "Laboratorio/ant_soort.nlogo",
     "Laboratorio/a.out.nlogo",
     "Laboratorio/Introduzione a NetLogo.md",
-    "Laboratorio/Swarm intelligence.md",
     "Teoria/Sistemi discreti.md",
     "Teoria/Agenti.md",
     "Laboratorio/playground.nlogo",
