@@ -70,3 +70,26 @@ Usato anche per l'instradamento su rete, compresi i sistemi P2P. #Vedi: anthill 
 Sono comportamenti emergenti anche tra gli esseri umani quando si attraversa un'area verde per ottimizzare il percorso verso un certo obiettivo.
 
 
+# Esperimenti ripetuti
+Con differente numero di esemplari. Ripeti più esecuzioni e analizza il numero di step, calcola la media.
+Vedi: https://en.wikipedia.org/wiki/Coefficient_of_determination
+
+L'ant sorting ha una curva di miglioramento polinomiale
+
+Le termiti, senza stigmergie, non sono una swarm intelligence. Sono semplicemente uno sciame.
+
+# Termiti con stigmergia
+Ogni nido ha un odore, che le formiche percepiscono secondo un gradiente. Il valore è massimo sul nido e diminuisce in modo progressivo all'allontamento.
+
+```NetLogo
+set odorenido 200 - distancexy 0 0
+```
+
+Il **feromone** è una variabile di fetch
+
+```NetLogo
+diffuse feromone (diffusion-rate/100)
+```
+
+L'**evaporation rate** determina la velocità con cui un feromone decade. L'equiazione differenziale è lineare, quindi la sua soluzione è un esponenziale.
+

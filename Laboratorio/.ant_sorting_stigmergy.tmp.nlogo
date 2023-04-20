@@ -1,42 +1,65 @@
-to setup
-  clear-all
-  crt turtles-num
-  ask patches [set pcolor blue]
-end
+patches-own [
+  feromone    ;; quantità di feromone nella patch
+  cibo?       ;; valore binario. 1 se la patch contiene cibo
+  nido?       ;; valore binario. 1 se la patch compone un nido
+  odore_nido   ;; gradiente. odore del nido. tanto forte quanto si è vicini al nido
+]
 
-to go
-  ask patches [set pcolor blue]
-  ask turtles [
-    set pcolor yellow
-    set pcolor red
-    fd 1
-    lt random max-angle
-    lt random 2max-angle
-    ifelse random 10 = 5 [pd] [pu]
+to setup
+  create-turtles numero_termiti
+  ask patches [
+    setup-nido
+    setup-cibo
   ]
 end
+
+to setup-nido
+  set nido? ( (distancexy 0 0) < 5 )
+  set odore_nido ( 200 - (distancexy 0 0) )
+end
+
+to setup-cibo
+  ;; prima sorgente di cibo
+  if ( (distancexy (0.6 * max-pxcor) 0) < 5) [
+    set cibo? 1
+  ]
+
+  ;; seconda sorgente di cibo
+  if ( (distancexy (-0.6 * max-pxcor) (-0.6 * max-pxcor)) < 5) [
+    set cibo? 1
+  ]
+
+  ;; terza sorgente di cibo
+  if ( (distancexy ) < 5) [
+    set cibo? 1
+  ]
+end
+
+to step
+end
+
 @#$#@#$#@
 GRAPHICS-WINDOW
-858
-29
-1648
-820
+1106
+10
+1851
+756
 -1
 -1
-7.743
+10.3803
 1
 10
 1
 1
 1
 0
-0
-0
 1
--50
-50
--50
-50
+1
+1
+-35
+35
+-35
+35
 0
 0
 1
@@ -44,11 +67,11 @@ ticks
 30.0
 
 BUTTON
-81
-101
-148
-134
-NIL
+19
+18
+88
+51
+Setup
 setup
 NIL
 1
@@ -61,12 +84,29 @@ NIL
 1
 
 BUTTON
-192
 119
-255
-152
+19
+182
+52
+Step
+step
 NIL
-go
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+219
+18
+282
+51
+Go
+step
 T
 1
 T
@@ -78,34 +118,60 @@ NIL
 1
 
 SLIDER
-304
-106
-476
-139
-turtles-num
-turtles-num
+23
+93
+195
+126
+diffusion_rate
+diffusion_rate
 0
-500
-499.0
+100
+50.0
 1
 1
 NIL
 HORIZONTAL
 
 SLIDER
-514
-114
-686
-147
-max-angle
-max-angle
+25
+186
+197
+219
+numero_termiti
+numero_termiti
 0
-180
-6.0
+500
+101.0
 1
 1
 NIL
 HORIZONTAL
+
+SLIDER
+25
+140
+197
+173
+evaporation_rate
+evaporation_rate
+0
+100
+50.0
+1
+1
+NIL
+HORIZONTAL
+
+INPUTBOX
+24
+239
+269
+299
+angolo_virata
+0.0
+1
+0
+Number
 
 @#$#@#$#@
 ## WHAT IS IT?

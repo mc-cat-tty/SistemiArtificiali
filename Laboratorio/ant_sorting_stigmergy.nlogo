@@ -1,71 +1,52 @@
+patches-own [
+  feromone    ;; quantità di feromone nella patch
+  cibo?       ;; valore binario. 1 se la patch contiene cibo
+  nido?       ;; valore binario. 1 se la patch compone un nido
+  odore_nido   ;; gradiente. odore del nido. tanto forte quanto si è vicini al nido
+]
+
 to setup
-  clear-all
-  create-turtles ant_num
-  ask turtles [
-    setxy random-xcor random-ycor
-    set color white
-    set size 6
-    set shape "bug"
-  ]
-
+  create-turtles numero_termiti
   ask patches [
-    if random-float 1 <= density [
-      set pcolor yellow
-    ]
+    setup-nido
+    setup-cibo
   ]
 end
 
-to wander
-  left random-float 10
-  right random-float 10
-  forward 1
+to setup-nido
+  set nido? ( (distancexy 0 0) < 5 )
+  set odore_nido ( 200 - (distancexy 0 0) )
 end
 
-to move-away
-  right random-float 360
-  forward move_away_inertia
-  if pcolor = yellow [
-    move-away
+to setup-cibo
+  ;; prima sorgente di cibo
+  if ( (distancexy (0.6 * max-pxcor) 0) < 5) [
+    set cibo? 1
   ]
-end
 
-to put-down-food
-  ifelse pcolor = black [
-    set color white
-    set pcolor yellow
-    move-away
-  ][
-    wander
-    put-down-food
+  ;; seconda sorgente di cibo
+  if ( (distancexy (-0.6 * max-pxcor) (-0.6 * max-pxcor)) < 5) [
+    set cibo? 1
   ]
-end
 
-to look-for-food
-  ifelse pcolor = yellow [
-    set color orange
-    set pcolor black
-    fd look_for_food_inertia
-  ][
-   wander
-   look-for-food
+  ;; terza sorgente di cibo
+  if ( (distancexy (-0.8 * max-pxcor) (-0.8 * max-pxcor)) < 5) [
+    set cibo? 1
   ]
 end
 
 to step
-  ask turtles [
-    look-for-food
-    put-down-food
-  ]
 end
+
 @#$#@#$#@
 GRAPHICS-WINDOW
-1066
-20
-1846
-801
+1106
+10
+1851
+756
 -1
 -1
-5.113
+10.3803
 1
 10
 1
@@ -75,10 +56,10 @@ GRAPHICS-WINDOW
 1
 1
 1
--75
-75
--75
-75
+-35
+35
+-35
+35
 0
 0
 1
@@ -86,12 +67,12 @@ ticks
 30.0
 
 BUTTON
-9
-10
-78
-43
+19
+18
+88
+51
 Setup
-setup\n
+setup
 NIL
 1
 T
@@ -103,10 +84,10 @@ NIL
 1
 
 BUTTON
-15
-54
-78
-87
+119
+19
+182
+52
 Step
 step
 NIL
@@ -120,11 +101,11 @@ NIL
 1
 
 BUTTON
+219
 18
-105
-81
-138
-Run
+282
+51
+Go
 step
 T
 1
@@ -137,53 +118,57 @@ NIL
 1
 
 SLIDER
-96
-10
-268
-43
-ant_num
-ant_num
+23
+93
+195
+126
+diffusion_rate
+diffusion_rate
 0
-500
-210.0
+100
+50.0
 1
 1
 NIL
 HORIZONTAL
 
 SLIDER
-97
-55
-269
-88
-density
-density
+25
+186
+197
+219
+numero_termiti
+numero_termiti
 0
+500
+101.0
 1
-0.13
-0.01
+1
+NIL
+HORIZONTAL
+
+SLIDER
+25
+140
+197
+173
+evaporation_rate
+evaporation_rate
+0
+100
+50.0
+1
 1
 NIL
 HORIZONTAL
 
 INPUTBOX
-288
-10
-449
-70
-look_for_food_inertia
-10.0
-1
-0
-Number
-
-INPUTBOX
-287
-92
-532
-152
-move_away_inertia
-20.0
+24
+239
+269
+299
+angolo_virata
+0.0
 1
 0
 Number
