@@ -20,3 +20,31 @@ Questo modello permette di costruire una porta logica per ogni neurone:
 - NAND -> ogni ingreso ha peso -1, soglia -1.5
 - AND NOT -> pesi 1, -1, soglia 0.5
 - XOR (attiva se input diversi) -> serve uno stato aggiuntivo (percettroni) -> Due layer: AND e OR
+
+## Modello di Hopfield
+Si ispira agli spin dei campi magnetici
+
+#Todo
+
+## Funzione energia
+$$E(x) = \frac{1}{2}\sum_{i,j=1,i \neq j}^Nw_{ij}x_ix_j + \sum_{i=1}^N \theta_ix_i$$
+
+I punti di minima energia sono gli attrattori
+
+Questa è una funzione di **Lyapunov**, ovvero una funzione che cala sempre. L'energia totale del sistema cala finchè non raggiunge un attrattore.
+
+#Todo: vedi dimostrazione. Nota che ad ogni passo cambia un solo neurone
+
+## Apprendimento hebbiano
+Da Donald Hepp (1949), neurologo. Quando un assone di una cellula eccita ripetutamente un'altra cellula, allora si verifica un processo di crescita e rinforzo.
+
+Allo stesso modo se due neuroni si attivano in sincrono, allora il loro lagame va rafforzato.
+
+#Vedi: esperimento di Pavlov con i cani -> riflesso incondizionato: crea legame tra l'area dell'udito e quella della digestione. Aumenta fisicamente lo spessore delle sinapsi.
+
+Se sono in **antifase** uno si spegne e l'altro si accende, se sono in fase (entrambi accersi o spenti) si rafforzano.
+
+Insegnando un pattern $A = (a_1 \dots a_N)$ le sinapsi dei neuroni nello stesso stato aumentano di valore. Una soluzione potrebbe essere $\Delta w_{ij} = (2A_i - 1) (2A_k - 1)$
+
+Possiamo usare una rete neurale anche per riconoscere se un pixel è di tipo A, B, A', B'
+
