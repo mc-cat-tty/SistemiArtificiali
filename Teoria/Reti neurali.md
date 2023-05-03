@@ -48,3 +48,7 @@ Insegnando un pattern $A = (a_1 \dots a_N)$ le sinapsi dei neuroni nello stesso 
 
 Possiamo usare una rete neurale anche per riconoscere se un pixel è di tipo A, B, A', B'
 
+# Note sul modello di Hopfield
+Nel modello di Hopfield la forma corretta, per esempio, di una lettera può essere dedotta da lettere scritte male. Grazie alla messa in and (**sovrapposizione**) delle uscite dei vari neuroni si ottiene la resistenza al rumore.
+
+#Vedi: archetipi

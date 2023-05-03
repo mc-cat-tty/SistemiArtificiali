@@ -11,11 +11,28 @@
             "id": "799bbcbe4f280378",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Teoria/Reti neurali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "916555886b78d572",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Laboratorio/Introduzione a SimBrain.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,13 +77,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "0b123e9ada31b0a7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "257d6fc5ca46c739",
@@ -82,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Laboratorio/Introduzione a SimBrain.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Laboratorio/Introduzione a SimBrain.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +145,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Laboratorio/Introduzione a SimBrain.md"
+              }
             }
           }
         ],
@@ -139,12 +167,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "799bbcbe4f280378",
+  "active": "916555886b78d572",
   "lastOpenFiles": [
     "Teoria/Reti neurali.md",
+    "Laboratorio/Introduzione a SimBrain.md",
+    "Laboratorio/Introduzione a NetLogo.md",
     "Teoria/Agenti.md",
     "Teoria/Sistemi esperti.md",
-    "Laboratorio/Introduzione a NetLogo.md",
     "Teoria/Algoritmi Genetici.md",
     "Laboratorio/Swarm intelligence.md",
     "Laboratorio/ant_sorting_stigmergy.nlogo",
