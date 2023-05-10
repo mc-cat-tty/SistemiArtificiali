@@ -38,6 +38,8 @@ Ha prestazioni inferiori rspetto ad altri modelli.
 - Devo avere un numero di neuroni proporzionale al numero di pattern che voglio riconoscere
 - Ogni neurone collabora al riconoscimento di qualsiasi cosa (tutti fanno tutto)
 
+I neuroni sono binari
+
 ## Rete a strati
 Strato di neuroni in ingresso, strati intermedi, strato di output (classificazione)
 
@@ -49,3 +51,31 @@ La funzione XOR e identità non solo linearmente separabili (non possono essere 
 
 È stato di mostrato matematicamente che con uno strato nascosto è sufficiente per implementare qualsiasi rete neurale. Non è stato posto nessun limite sul numero di nodi di questo strato.
 
+# Legenda neuroni
+- rosso -> uscita
+- verde -> entrata
+
+#Vedi: radial basis function
+
+# Shortcuts
+- r -> random
+- n -> nodes
+- w -> weights
+
+La morsa sta per clamp:
+- N -> neurons
+- W -> weights
+
+# Fasi apprendimento
+## Learning
+Disegno pattern sui nodi e li blocco. Faccio evolvere i pesi.
+Nodi binari, pesi hebbiani
+
+## Inference
+Disegno un carattere sporco, blocco i pesi e ottengo una configurazione stabile dei nodi.
+
+## Aggiungere un carattere
+...
+
+# High dimensional projection
+Proietto uno spazio delle fasi ad n dimensioni su uno spazio a m\<n dimensioni
