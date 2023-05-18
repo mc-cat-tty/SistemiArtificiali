@@ -79,3 +79,23 @@ Disegno un carattere sporco, blocco i pesi e ottengo una configurazione stabile 
 
 # High dimensional projection
 Proietto uno spazio delle fasi ad n dimensioni su uno spazio a m\<n dimensioni
+
+#Vedi: percettroni multi-livello
+
+# Trainer
+- backpropagation -> va alla ricerca dell'errore minimo
+- LMS (Least Mean Square)
+I dati del trainer possono essere caricati da  _load data_
+
+
+Gli **input data** sono una tabella con una colonna per ogni neurone di input.
+I **training data** sono una tabella con una colonna per ogni neurone di output.
+
+Rete di compressione con 3 layer:
+- 3 nodi di ingresso
+- 2 nodi intermedi
+- 3 nodi di output
+
+La compressione è possibile solo se le configurazioni di input sono meno di 8 (in questo caso). Insieme al dato da decomprimere bisogna distribuire lo strato intermedio (nodi e pesi?)
+
+Nello XOR tiriamo casualmente i valori iniziali finchè l'errore non scende sotto al millesimo

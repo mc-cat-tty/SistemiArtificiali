@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8166fd04ddbb7f2d",
+        "id": "db7ab98d50b2c487",
         "type": "tabs",
         "children": [
           {
-            "id": "799bbcbe4f280378",
+            "id": "ed9cc7b13ef55e43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Reti neurali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "916555886b78d572",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Laboratorio/Introduzione a SimBrain.md",
+                "file": "Laboratorio/SimBrain - Mondo degli odori.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 224.5
   },
   "right": {
     "id": "257d6fc5ca46c739",
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laboratorio/Introduzione a SimBrain.md",
+                "file": "Laboratorio/SimBrain - Mondo degli odori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laboratorio/Introduzione a SimBrain.md",
+                "file": "Laboratorio/SimBrain - Mondo degli odori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laboratorio/Introduzione a SimBrain.md"
+                "file": "Laboratorio/SimBrain - Mondo degli odori.md"
               }
             }
           }
@@ -167,13 +154,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "916555886b78d572",
+  "active": "ed9cc7b13ef55e43",
   "lastOpenFiles": [
+    "Laboratorio/Introduzione a SimBrain.md",
+    "Laboratorio/SimBrain - Mondo degli odori.md",
+    "Laboratorio/Untitled",
+    "Laboratorio/XorMultilayerPerceptron.xml",
+    "Laboratorio/OrPerceptron.xml",
+    "Teoria/Reti neurali.md",
     "Laboratorio/RiconoscitoreT.xml",
     "Laboratorio/Formiche evolute.md",
-    "Laboratorio/Introduzione a SimBrain.md",
     "Laboratorio/Introduzione a NetLogo.md",
-    "Teoria/Reti neurali.md",
     "Teoria/Agenti.md",
     "Teoria/Sistemi esperti.md",
     "Teoria/Algoritmi Genetici.md",
@@ -195,8 +186,6 @@
     "Teoria/Images/sistemi_caotici.png",
     "Teoria/Introduzione.md",
     "Teoria/Images/sistema_dissipativo.png",
-    "Teoria/Images/sistema_dinamico.png",
-    "Teoria/Images",
-    "Teoria"
+    "Teoria/Images/sistema_dinamico.png"
   ]
 }
