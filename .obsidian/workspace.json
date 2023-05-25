@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f5fe25e1a0a52890",
+        "id": "dfc0d87283f2cad5",
         "type": "tabs",
         "children": [
           {
-            "id": "31519f44739a073b",
+            "id": "158d361c7bf81d2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Laboratorio/Simbrain - Ant GA.md",
+                "file": "Teoria/Topologia.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Laboratorio/Simbrain - Ant GA.md",
+                "file": "Teoria/Topologia.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Laboratorio/Simbrain - Ant GA.md",
+                "file": "Teoria/Topologia.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Laboratorio/Simbrain - Ant GA.md"
+                "file": "Teoria/Topologia.md"
               }
             }
           }
@@ -154,10 +154,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "31519f44739a073b",
+  "active": "158d361c7bf81d2a",
   "lastOpenFiles": [
-    "Laboratorio/SimBrain - Mondo degli odori.md",
+    "Teoria/Topologia.md",
     "Laboratorio/Simbrain - Ant GA.md",
+    "Laboratorio/SimBrain - Mondo degli odori.md",
     "Laboratorio/Introduzione a SimBrain.md",
     "Laboratorio/Introduzione a NetLogo.md",
     "Laboratorio/Formiche evolute.md",
