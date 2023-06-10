@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "dfc0d87283f2cad5",
+        "id": "5bd1926b841d2919",
         "type": "tabs",
         "children": [
           {
-            "id": "158d361c7bf81d2a",
+            "id": "07b93d493048b0ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Conclusione.md",
+                "file": "Teoria/8. Reti neurali.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/Conclusione.md",
+                "file": "Teoria/8. Reti neurali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/Conclusione.md",
+                "file": "Teoria/8. Reti neurali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoria/Conclusione.md"
+                "file": "Teoria/8. Reti neurali.md"
               }
             }
           }
@@ -154,41 +154,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "158d361c7bf81d2a",
+  "active": "07b93d493048b0ec",
   "lastOpenFiles": [
-    "Teoria/Conclusione.md",
-    "Teoria/Topologia.md",
+    "Teoria/8. Reti neurali.md",
+    "Untitled.md",
+    "Teoria/Images/TassoDiApprendimento.png",
+    "DimNN.md",
+    "Teoria/Images/HebbianWeight.svg",
+    "Math4NN.md",
+    "Teoria/Images/HebbianWeight.drawio.svg",
+    "Teoria/Images/neuron.webp",
+    "Teoria/5. Agenti.md",
+    "Teoria/3. Sistemi dinamici.md",
+    "Laboratorio/Introduzione a NetLogo.md",
+    "Teoria/10. Conclusione.md",
+    "Teoria/9. Topologia.md",
+    "Teoria/7. Sistemi esperti.md",
+    "Teoria/6. Algoritmi Genetici.md",
+    "Teoria/4. Sistemi discreti.md",
+    "Teoria/2. Limti della programmazione tradizionale.md",
+    "Teoria/1. Introduzione.md",
     "Laboratorio/Simbrain - Ant GA.md",
     "Laboratorio/SimBrain - Mondo degli odori.md",
     "Laboratorio/Introduzione a SimBrain.md",
-    "Laboratorio/Introduzione a NetLogo.md",
     "Laboratorio/Formiche evolute.md",
     "Laboratorio/Swarm intelligence.md",
     "Laboratorio/Untitled",
     "Laboratorio/XorMultilayerPerceptron.xml",
     "Laboratorio/OrPerceptron.xml",
-    "Teoria/Reti neurali.md",
     "Laboratorio/RiconoscitoreT.xml",
-    "Teoria/Agenti.md",
-    "Teoria/Sistemi esperti.md",
-    "Teoria/Algoritmi Genetici.md",
     "Laboratorio/ant_sorting_stigmergy.nlogo",
-    "Teoria/Sistemi dinamici.md",
     "Laboratorio/ant_sort.nlogo",
     "Laboratorio/ant_soort.nlogo",
     "Laboratorio/a.out.nlogo",
-    "Teoria/Sistemi discreti.md",
     "Laboratorio/playground.nlogo",
     "Laboratorio",
-    "Teoria/Limti della programmazione tradizionale.md",
     "Teoria/Images/potenziale_buca.png",
     "Teoria/Images/potenziale.png",
     "Teoria/Images/feigenbaum.png",
     "Teoria/Images/punti_fissi_conigli.png",
     "Teoria/Images/metodo_della_scala.png",
-    "Teoria/Images/sistemi_caotici.png",
-    "Teoria/Introduzione.md",
-    "Teoria/Images/sistema_dissipativo.png",
-    "Teoria/Images/sistema_dinamico.png"
+    "Teoria/Images/sistemi_caotici.png"
   ]
 }
